@@ -635,6 +635,29 @@ hi! link xmlDocTypeDecl PreProc
 hi! link xmlDocTypeKeyword PreProc
 hi! link xmlProcessingDelim xmlAttrib
 
+" Neovim terminal colors
+
+if has('nvim')
+  let  g:terminal_color_0 = '#1c1c1c'
+  let  g:terminal_color_1 = '#cf6a4c'
+  let  g:terminal_color_2 = '#70b950'
+  let  g:terminal_color_3 = '#fad07a'
+  let  g:terminal_color_4 = '#8fbfdc'
+  let  g:terminal_color_5 = '#c6b6ee'
+  let  g:terminal_color_6 = '#89b8c2'
+  let  g:terminal_color_7 = '#e8e8d3'
+  let  g:terminal_color_8 = '#6b7089'
+  let  g:terminal_color_9 = '#cf6a4c'
+  let g:terminal_color_10 = '#70b950'
+  let g:terminal_color_11 = '#fad07a'
+  let g:terminal_color_12 = '#8fbfdc'
+  let g:terminal_color_13 = '#c6b6ee'
+  let g:terminal_color_14 = '#89b8c2'
+  let g:terminal_color_15 = '#e8e8d3'
+else
+  let g:terminal_ansi_colors = ['#1c1c1c', '#cf6a4c', '#70b950', '#fad07a', '#8fbfdc', '#c6b6ee', '#89b8c2', '#e8e8d3', '#6b7089', '#cf6a4c', '#70b950', '#fad07a', '#8fbfdc', '#c6b6ee', '#89b8c2', '#e8e8d3']
+endif
+
 " Debugger.vim
 
 call s:X("DbgCurrent","DEEBFE","345FA8","","White","DarkBlue")
